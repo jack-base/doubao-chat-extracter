@@ -1,17 +1,14 @@
-# zhihu-publisher-vscode README
+# doubao-chat-extracter README
 
-This is the README for extension "zhihu-publisher-vscode". 
+This is the README for extension "doubao-chat-extracter". 
 
 ## Features
 
 This extension does the following:
- - publish markdown file to zhihu
- - update article to zhihu
- - delete article from zhihu
- - build article map to manage your articles
+ - import doubao chat to vscode
 
 like this:
-![](./img/image.png)
+![](./image.png)
 
 ## Requirements
 
@@ -40,6 +37,6 @@ Users appreciate release notes as you update your extension.
 
 ## Dev
 welcome to contribute and fork me
-**[Github](https://github.com/jack-base/zhihu-publisher-vscode)**
+**[Github](https://github.com/jack-base/doubao-chat-extracter)**
 
 **Enjoy!**

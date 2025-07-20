@@ -59,6 +59,6 @@
     "type": "git",
     "url": "https://github.com/jack-base/doubao-chat-extracter.git"
   },
-  "icon": "logo-icon.png",
+  "icon": "img/logo-icon.png",
   "license": "MIT"
 }
