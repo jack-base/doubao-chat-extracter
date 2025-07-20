@@ -12,14 +12,14 @@ export function getMessageListFromHTML(html: string): MessageItem[] | null {
 export function formatMessage(message:string
 ): string {
   // replace \( \) with $ $
-const regex = /\\\((.*?)\\\)/g;
+const regex = /\\\((.*?)\\\)/sg;
 message = message.replace(regex, (match,p1) => {
   return `$${p1}$`;
 });
   // replace \[ \] with $$ $$
-  const regex2 = /\\\[(.*?)\\\]/g;
+  const regex2 = /\\\[(.*?)\\\]/sg;
   message = message.replace(regex2, (match,p1) => {
-    return `$$${p1}$$`;
+    return `$$\n${p1}\n$$`;
   });
   return message;
 }

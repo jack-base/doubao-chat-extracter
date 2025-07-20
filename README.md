@@ -13,19 +13,8 @@ like this:
 ## Requirements
 
 ```
-    "axios": "^1.4.0",
-    "cheerio": "^1.0.0-rc.12",
-    "form-data": "^4.0.0"
+    "axios": "^1.4.0"
 ```
-
-## Extension Settings
-
-Please setting your zhihu cookie in settings.json
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
 
 ## Dev
 welcome to contribute and fork me

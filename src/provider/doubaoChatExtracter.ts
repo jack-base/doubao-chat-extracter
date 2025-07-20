@@ -3,6 +3,7 @@ import * as path from "path";
 import * as fs from "fs";
 import { GetChatHTMLService } from "../service/getChatHTML";
 import { getMessageListFromHTML, formatMessage } from "../utils/preprocess";
+import { MessageItem } from "../model/chat";
 
 export const doubaoChatExtracter = async (uri: vscode.Uri) => {
   try {
@@ -48,7 +49,13 @@ export const doubaoChatExtracter = async (uri: vscode.Uri) => {
     }
 
     const tts = chatData
-      .map((message: { tts_content: any }) => message.tts_content)
+      .map((message: MessageItem) => {
+        if (message.user_type === 1) {
+          return "<user>\n\n" + message.tts_content + "\n\n" + "</user>";
+        } else if (message.user_type === 2) {
+          return "<bot>\n\n" + message.tts_content + "\n\n" + "</bot>";
+        }
+      })
       .join("\n\n\n");
 
     const fmt = formatMessage(tts);

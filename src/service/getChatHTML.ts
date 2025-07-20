@@ -10,7 +10,7 @@ export class GetChatHTMLService {
     this.replayer = new HarReplayer();
   }
   public async getHTML(url: string): Promise<string> {
-    this.replayer.init(path.join(extensionPath , "src/resource/getChatHTML.har"));
+    this.replayer.init(path.join(__dirname , "../../resource/getChatHTML.har"));
     this.replayer.modifyRequest(0, {
       url: url,
       method: "GET",
