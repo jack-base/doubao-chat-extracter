@@ -8,7 +8,7 @@ This extension does the following:
  - import doubao chat to vscode
 
 like this:
-![](./image.png)
+![](./img/image.png)
 
 ## Requirements
 
@@ -26,14 +26,6 @@ Please setting your zhihu cookie in settings.json
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.2.1
-- Add feature: support upload image
-
----
 
 ## Dev
 welcome to contribute and fork me
