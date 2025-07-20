@@ -4,7 +4,7 @@ import { doubaoChatExtracter } from "./provider/doubaoChatExtracter";
 export function activate(context: vscode.ExtensionContext) {
   let disposable = [
     vscode.commands.registerCommand(
-      "zhihu-publisher-vscode.doubaoChatExtracter",
+      "doubao-chat-extracter.doubaoChatExtracter",
       doubaoChatExtracter
     )
   ];
